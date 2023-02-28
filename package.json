@@ -4,7 +4,7 @@
   "description": "Primer proyecto con MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js --exec babel-node"
   },
   "keywords": [],
   "author": "Raúl Gabriel Gerónimo Herrera",
