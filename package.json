@@ -1,12 +1,18 @@
 {
   "name": "mongodb-crud",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Primer proyecto con MongoDB",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Raúl Gabriel Gerónimo Herrera",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "mongoose": "^7.0.0",
+    "morgan": "^1.10.0"
+  }
 }
