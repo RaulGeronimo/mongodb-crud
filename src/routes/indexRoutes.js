@@ -1,9 +1,20 @@
 import { Router } from "express";
+import Task from "../models/Task";
 
 const router = Router()
 
-router.get("/", (req, res) => {
-    res.render('index')
+router.get("/", async (req, res) => {
+    const tasks = await Task.find().lean()
+    
+    res.render('index', {tasks: tasks})
+});
+
+router.post("/tasks/add", async (req, res) => {
+    const task = Task(req.body)
+    await task.save()
+    res.redirect('/')
+    /* console.log(task) */
+    
 });
 
 router.get("/about", (req, res) => {

@@ -1,1 +1,26 @@
-<h1>Prueba</h1>
+<form action="/tasks/add" method="post">
+  {{! Titulo }}
+  <div class="">
+    <label for="title">Escribe un titulo</label>
+    <input type="text" name="title" id="title" placeholder="title" />
+  </div>
+
+  {{! Descripcion }}
+  <div class="">
+    <label for="description">Escribe un titulo</label>
+    <textarea id="description" name="description" rows="2" placeholder="description"></textarea>
+  </div>
+
+  <button>Agregar</button>
+</form>
+
+<ul>
+  {{#each tasks}}
+  <li>
+    {{title}}
+    <p>{{description}}</p>
+    <button>edit</button>
+    <button>delete</button>
+  </li>
+  {{/each}}
+</ul>
