@@ -19,12 +19,12 @@
                 <button><i class="fa-solid fa-trash"></i></button> --}}
 
                 {{#if done}}
-                <a href="/toogleDone/{{_id}}">Undone</a>
+                <a href="/tasks/{{_id}}/toogleDone">Undone</a>
                 {{else}}
-                <a href="/toogleDone/{{_id}}">Done</a>
+                <a href="/tasks/{{_id}}/toogleDone">Done</a>
                 {{/if}}
-                <a href="/delete/{{_id}}">Delete</a>
-                <a href="/edit/{{_id}}">Update</a>
+                <a href="/tasks/{{_id}}/delete">Delete</a>
+                <a href="/tasks/{{_id}}/edit">Update</a>
             </td>
             {{/each}}
         </tr>
