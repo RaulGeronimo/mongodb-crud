@@ -1,6 +1,2 @@
 #Variables de entorno
 .env
-
-#Dependencias de Node
-node_modules
-
