@@ -4,8 +4,8 @@
   "description": "Primer proyecto con MongoDB",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js --exec babel-node",
-    "start": "babel src -d dist && ncp src/views dist/views && ncp src/public dist/public"
+    "dev": "babel src -d dist && ncp src/views dist/views && ncp src/public dist/public",
+    "start": "nodemon src/index.js --exec babel-node"
   },
   "keywords": [],
   "author": "Raúl Gabriel Gerónimo Herrera",
